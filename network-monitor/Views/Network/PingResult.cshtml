@@ -1,0 +1,93 @@
+﻿
+
+@model network_monitor.Models.PingResultModel
+
+<h2>Ping Results</h2>
+
+
+@if (Model == null)
+{
+    <p>No data available. Please try again.</p>
+}
+else
+{
+    @if (Model.Success)
+    {
+        <p>Ping to @Model.IPAddress was successful.</p>
+        <p>Status: @Model.Status</p>
+        <p>Round Trip Time: @Model.RoundTripTime ms</p>
+        @Html.ActionLink("Ping another IP Address", "Ping", "Network")
+    }
+    else
+    {
+        <p>Ping to @Model.IPAddress failed.</p>
+        <p>Status: @Model.Status</p>
+        @if (!string.IsNullOrEmpty(Model.ErrorMessage))
+        {
+            <p>Error: @Model.ErrorMessage</p>
+        }
+        @Html.ActionLink("Ping another IP Address", "Ping", "Network")
+    }
+}
+
+<h3>Ping History on This Application</h3>
+<table id="pingHistoryTable" border="1">
+    <thead>
+        <tr>
+            <th>IP Address</th>
+            <th>Success</th>
+            <th>Status</th>
+            <th>Round Trip Time (ms)</th>
+            <th>Error Message</th>
+            <th>Timestamp</th>
+        </tr>
+    </thead>
+    <tbody>
+        <!-- Ping history rows will be dynamically added here -->
+    </tbody>
+</table>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+    // Fetch the ping history and populate the table
+    function loadPingHistory() {
+        $.get('/PingResults/GetPingResults', function(data) {
+            //console.log(data)
+            const tableBody = $('#pingHistoryTable tbody');
+            tableBody.empty(); // Clear existing rows
+            data.forEach(result => {
+                const row = `
+                    <tr>
+                        <td>${result.ipAddress}</td>
+                        <td>${result.success}</td>
+                        <td>${result.status}</td>
+                        <td>${result.roundTripTime || 'N/A'}</td>
+                        <td>${result.errorMessage || 'None'}</td>
+                        <td>${new Date(result.timestamp).toLocaleString()}</td>
+                    </tr>
+                `;
+                tableBody.append(row);
+            });
+        });
+    }
+
+    // Handle form submission for the ping action
+    $('#pingForm').submit(function(event) {
+        event.preventDefault(); // Prevent page reload
+
+        const ipAddress = $('#ipAddress').val();
+        $.post('/PingResults/AddPingResult', { ipAddress }, function() {
+            // Reload the ping history after a successful ping
+            loadPingHistory();
+        }).fail(function() {
+            alert('Failed to ping the IP address. Please check your input.');
+        });
+
+
+    });
+
+    // Load ping history when the page loads
+    $(document).ready(function() {
+        loadPingHistory();
+    });
+</script>
