@@ -1,0 +1,16 @@
+﻿
+@model network_monitor.Models.SubnetCalcModel
+
+<h3>Subnet Calculation Results</h3>
+<table id="subnetCalcResults" border="1">
+    <tbody>
+        @foreach (var property in Model.GetType().GetProperties())
+        {
+            <tr>
+                <td>@Model.propertyLabels[property.Name]</td>
+                <td>@property.GetValue(Model)</td>
+            </tr>
+        }
+    </tbody>
+</table>
+@Html.ActionLink("Perform another subnet calculation", "SubnetCalc", "Network")

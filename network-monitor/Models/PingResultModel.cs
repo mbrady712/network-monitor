@@ -8,7 +8,6 @@ namespace network_monitor.Models
         public string Status { get; set; }
         public long RoundTripTime { get; set; }
         public string ErrorMessage { get; set; }
-
         public DateTime Timestamp { get; set; }
 
     }

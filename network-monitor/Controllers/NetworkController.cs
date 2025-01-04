@@ -2,12 +2,19 @@
 using System.Net.NetworkInformation;
 using Microsoft.AspNetCore.Mvc;
 using network_monitor.Helpers;
+using network_monitor.Services;
 using network_monitor.Models;
+using System.Runtime.CompilerServices;
 
 namespace network_monitor.Controllers
 {
     public class NetworkController : Controller
     {
+        private readonly SubnetCalcService _service;
+        public NetworkController()
+        {
+            _service = new SubnetCalcService();
+        }
         public ActionResult ArpResults()
         {
             // Call the utility method to get arp -a results
@@ -19,13 +26,11 @@ namespace network_monitor.Controllers
             return View();
         }
 
-        // GET: Ping
         public ActionResult Ping()
         {
             return View();
         }
 
-        // POST: Ping
         [HttpPost]
         public ActionResult PingResult(string ipAddress)
         {
@@ -52,6 +57,28 @@ namespace network_monitor.Controllers
 
             var pingResultsToDB = new PingResultsController { };
             pingResultsToDB.AddPingResult(model);
+            return View(model);
+        }
+
+        public ActionResult SubnetCalc()
+        {
+            return View();
+        }
+
+  
+
+        [HttpPost]
+        public ActionResult SubnetCalcResult(string subnetMask, string ipAddress)
+        {
+            var model = new SubnetCalcModel { IPAddress = ipAddress, SubnetMask = subnetMask };
+            try
+            {
+                model = _service.Calculate(model);
+            }
+            catch (Exception ex) {
+                model = null;
+            }
+            
             return View(model);
         }
     }
