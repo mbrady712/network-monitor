@@ -20,7 +20,6 @@ C:\Users\micha\source\repos\network-monitor\network-monitor\obj\Debug\net9.0\net
 C:\Users\micha\source\repos\network-monitor\network-monitor\obj\Debug\net9.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
 C:\Users\micha\source\repos\network-monitor\network-monitor\obj\Debug\net9.0\scopedcss\bundle\network-monitor.styles.css
 C:\Users\micha\source\repos\network-monitor\network-monitor\obj\Debug\net9.0\scopedcss\projectbundle\network-monitor.bundle.scp.css
-C:\Users\micha\source\repos\network-monitor\network-monitor\obj\Debug\net9.0\compressed\vo25wiqolr-7nd9l1fykp.gz
 C:\Users\micha\source\repos\network-monitor\network-monitor\obj\Debug\net9.0\compressed\zpnzvpl88r-61n19gt1b8.gz
 C:\Users\micha\source\repos\network-monitor\network-monitor\obj\Debug\net9.0\compressed\wsqzb8rdgy-xtxxf3hu2r.gz
 C:\Users\micha\source\repos\network-monitor\network-monitor\obj\Debug\net9.0\compressed\6jnjbhtndd-bqjiyaj88i.gz
@@ -101,3 +100,4 @@ C:\Users\micha\source\repos\network-monitor\network-monitor\obj\Debug\net9.0\net
 C:\Users\micha\source\repos\network-monitor\network-monitor\obj\Debug\net9.0\network-monitor.genruntimeconfig.cache
 C:\Users\micha\source\repos\network-monitor\network-monitor\obj\Debug\net9.0\ref\network-monitor.dll
 C:\Users\micha\source\repos\network-monitor\network-monitor\bin\Debug\net9.0\Npgsql.dll
+C:\Users\micha\source\repos\network-monitor\network-monitor\obj\Debug\net9.0\compressed\vo25wiqolr-7qqnpw0qp7.gz
