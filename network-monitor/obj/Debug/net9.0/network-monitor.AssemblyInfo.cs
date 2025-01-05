@@ -11,10 +11,11 @@
 using System;
 using System.Reflection;
 
+[assembly: Microsoft.Extensions.Configuration.UserSecrets.UserSecretsIdAttribute("6da345d6-8760-4636-ad3e-1a44d3cadb88")]
 [assembly: System.Reflection.AssemblyCompanyAttribute("network-monitor")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e5c275b45db0837b14990ab68a4f36fdd57a3c11")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2bd519645d90ebd837bb662f46bcadb9305c3463")]
 [assembly: System.Reflection.AssemblyProductAttribute("network-monitor")]
 [assembly: System.Reflection.AssemblyTitleAttribute("network-monitor")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
