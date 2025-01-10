@@ -1,0 +1,11 @@
+C:\Users\micha\source\repos\network-monitor\out\network-monitor.exe
+C:\Users\micha\source\repos\network-monitor\out\appsettings.Development.json
+C:\Users\micha\source\repos\network-monitor\out\appsettings.json
+C:\Users\micha\source\repos\network-monitor\out\network-monitor.dll
+C:\Users\micha\source\repos\network-monitor\out\network-monitor.deps.json
+C:\Users\micha\source\repos\network-monitor\out\network-monitor.runtimeconfig.json
+C:\Users\micha\source\repos\network-monitor\out\network-monitor.pdb
+C:\Users\micha\source\repos\network-monitor\out\DnsClient.dll
+C:\Users\micha\source\repos\network-monitor\out\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\micha\source\repos\network-monitor\out\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\micha\source\repos\network-monitor\out\Npgsql.dll

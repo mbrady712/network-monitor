@@ -1,12 +1,13 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
-    <TargetFramework>net9.0</TargetFramework>
+    <TargetFramework>net8.0</TargetFramework>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
     <RootNamespace>network_monitor</RootNamespace>
     <UserSecretsId>6da345d6-8760-4636-ad3e-1a44d3cadb88</UserSecretsId>
     <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+    <LangVersion>preview</LangVersion>
   </PropertyGroup>
 
   <ItemGroup>

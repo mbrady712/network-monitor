@@ -1,0 +1,9 @@
+C:\Users\micha\source\repos\network-monitor\network-monitor\obj\Release\net7.0\network-monitor.csproj.AssemblyReference.cache
+C:\Users\micha\source\repos\network-monitor\network-monitor\obj\Release\net7.0\network-monitor.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\micha\source\repos\network-monitor\network-monitor\obj\Release\net7.0\network-monitor.AssemblyInfoInputs.cache
+C:\Users\micha\source\repos\network-monitor\network-monitor\obj\Release\net7.0\network-monitor.AssemblyInfo.cs
+C:\Users\micha\source\repos\network-monitor\network-monitor\obj\Release\net7.0\network-monitor.csproj.CoreCompileInputs.cache
+C:\Users\micha\source\repos\network-monitor\network-monitor\obj\Release\net7.0\network-monitor.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\micha\source\repos\network-monitor\network-monitor\obj\Release\net7.0\network-monitor.RazorAssemblyInfo.cache
+C:\Users\micha\source\repos\network-monitor\network-monitor\obj\Release\net7.0\network-monitor.RazorAssemblyInfo.cs
+C:\Users\micha\source\repos\network-monitor\network-monitor\obj\Release\net7.0\network-monitor.sourcelink.json

@@ -2,22 +2,22 @@
 {
     public class SubnetCalcModel
     {
-        public string SubnetMask { get; set; }
-        public string IPAddress { get; set; }
-        public string NetworkAddress { get; set; }
-        public string FirstUsableAddress { get; set; }
+        public string? SubnetMask { get; set; }
+        public string? IPAddress { get; set; }
+        public string? NetworkAddress { get; set; }
+        public string? FirstUsableAddress { get; set; }
 
-        public string LastUsableAddress { get; set; }
+        public string? LastUsableAddress { get; set; }
 
-        public string BroadcastAddress { get; set; }
+        public string? BroadcastAddress { get; set; }
 
-        public string TotalNumHosts { get; set; }
+        public string? TotalNumHosts { get; set; }
 
-        public string NumUsableHosts { get; set; }
+        public string? NumUsableHosts { get; set; }
 
-        public string BinarySubnetMask { get; set; }
+        public string? BinarySubnetMask { get; set; }
 
-        public string CIDR { get; set; }
+        public string? CIDR { get; set; }
 
         public Dictionary<string, string> propertyLabels = new Dictionary<string, string>
             {
