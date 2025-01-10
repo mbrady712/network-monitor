@@ -3,4 +3,5 @@ services:
     name: network-monitor
     runtime: docker
     plan: free
-    dockerfilePath: Dockerfile
+    dockerfilePath: ./Dockerfile
+    
